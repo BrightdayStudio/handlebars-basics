@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>handlebars test</title>
+    <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+  <body>
+
+    <div id="div1">
+
+    </div>
+    <div class="container">
+
+    </div>
+
+    <script id="template" type="text/x-handlebars-template">
+      {{#each names}}
+      <div class="name">
+        <img src="imgs/{{shortcode}}.jpg" alt="">
+      <div class="txt">
+        <p>{{@index}} {{ fname }} {{ lname }} - {{ course.code }}
+      </p>
+      <p>
+        {{#each documents}}
+         {{ this }}
+         {{/each}}
+            </p>
+        <p>
+          <p>{{formatGrade grade}}</p>
+          <p>{{formatName fname lname}}</p>
+          <p>{{studentID uid}}</p>
+      {{#if grade}} || Grade: {{ grade }} {{ else if level}} Level: {{level}} {{ else }} Unknown {{/if}}
+    </p>
+      {{#unless grade}}
+      {{#warming}} <p class="warning">WARNING: This entry does not have a grade!</p>
+  {{/warming}}
+      {{/unless}}
+
+      {{ link uid}}
+      <a href="student.html?id={{uid}}" class="button">View Details</a>
+    </div>
+      </div>
+      {{/each}}
+
+    
+    </script>
+
+
+
+<script src="script.js" ></script>
+
+
+  </body>
+</html>

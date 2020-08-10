@@ -1,0 +1,21 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  padding:3em;
+}
+
+.name {
+  background: white;
+  padding:.5em;
+}
+
+img {
+  display: inline-block;
+}
+
+.name div {
+  display: inline-block;
+  padding-left: 1em;
+}

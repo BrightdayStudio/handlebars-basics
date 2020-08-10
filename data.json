@@ -1,0 +1,32 @@
+{
+  "names": [
+    {
+      "fname": "bugs",
+      "lname": "bunny",
+      "uid": "0123456",
+      "shortcode": "bugs",
+      "grade": null,
+      "level": 2,
+      "documents": ["note1", "note2"],
+      "course": {
+        "code": "xxx"
+      }
+    },
+    {
+      "fname": "daffy",
+      "lname": "duck",
+      "uid": "6478910",
+      "shortcode": "daffy",
+      "grade": "pass",
+      "level": null,
+      "documents": ["note1", "note2"]
+    },
+    {
+      "fname": "micky",
+      "lname": "mouse",
+      "uid": "11121314",
+      "shortcode": "micky",
+      "documents": ["note1", "note2"]
+    }
+  ]
+}
